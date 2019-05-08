@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.HashMap;
 
 public class Main {
@@ -21,5 +22,13 @@ public class Main {
         }
         return numReturn;
     }
+
+
+    static int strayFromCodeWars(int[] numbers) {
+        Arrays.sort(numbers);
+        return numbers[0] == numbers[1] ? numbers[numbers.length-1] : numbers[0];
+    }
+
+
 
 }
