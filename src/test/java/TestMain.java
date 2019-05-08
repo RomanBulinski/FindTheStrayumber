@@ -9,4 +9,11 @@ public class TestMain {
         assertEquals(3,  Main.stray(numbers));
     }
 
+    @Test
+    public void test2(){
+        int[] numbers = {0,1,1,1};
+        assertEquals(0,  Main.stray(numbers));
+    }
+
+
 }
